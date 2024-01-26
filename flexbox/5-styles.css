@@ -159,7 +159,7 @@ template {
 }
 
 /* Variables
-           ============================= */
+   ============================= */
 
 :root {
   --color-primary: #d73953;
@@ -238,7 +238,7 @@ template {
 }
 
 /* Base
-              ============================= */
+      ============================= */
 
 *,
 *:before,
@@ -304,7 +304,7 @@ a:active {
 }
 
 /* Helpers
-              ============================= */
+      ============================= */
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute !important;
@@ -318,7 +318,7 @@ a:active {
 /*** 2. LAYOUT ***/
 
 /* Layout
-              ============================= */
+      ============================= */
 
 .container {
   width: 960px;
@@ -327,7 +327,7 @@ a:active {
 }
 
 /* Grid
-              ============================= */
+      ============================= */
 
 .row {
   display: flex;
@@ -352,11 +352,7 @@ ul.row {
 }
 
 /* Navbar
-              ============================= */
-
-.navbar-menu {
-  float: right;
-}
+      ============================= */
 
 .nav {
   margin: 0;
@@ -402,13 +398,13 @@ ul.row {
 }
 
 /* Header
-              ============================= */
+      ============================= */
 
 .header {
   padding: var(--header-padding);
   position: relative;
   z-index: 3;
-  background: transparent;
+  background: transparent !important;
 }
 
 .header-container {
@@ -417,7 +413,7 @@ ul.row {
 }
 
 /* Footer
-              ============================= */
+      ============================= */
 
 .footer {
   --nav-item-font-weight: normal;
@@ -450,7 +446,7 @@ ul.row {
 /*** 3. SECTION ***/
 
 /* Section (all styles)
-              ============================= */
+      ============================= */
 
 .section {
   padding: var(--section-padding);
@@ -487,7 +483,7 @@ ul.row {
 }
 
 /* Section theming
-              ============================= */
+      ============================= */
 
 [data-section-theme="dark"] {
   --button-color: var(--color-white);
@@ -497,7 +493,7 @@ ul.row {
 }
 
 /* Section HERO
-              ============================= */
+      ============================= */
 
 .section-hero {
   background-position: 75% 0;
@@ -514,13 +510,15 @@ ul.row {
   padding: 10rem 40rem 2rem 0;
 }
 
-/* Section Latest news ============================= */
+/* Section Latest news
+    ============================= */
 
 .section-latest-news .row {
   flex-direction: row-reverse;
 }
 
-/* Section SERVICES ============================= */
+/* Section SERVICES
+    ============================= */
 
 .section-services .row {
   flex-wrap: wrap;
@@ -529,14 +527,14 @@ ul.row {
 /*** 4. CARD ***/
 
 /* Card (all styles)
-              ============================= */
+      ============================= */
 
 .card-category {
   color: var(--color-primary);
 }
 
 /* Card WORK
-              ============================= */
+      ============================= */
 
 .card-work .card-outer {
   position: relative;
@@ -601,7 +599,7 @@ ul.row {
 }
 
 /* Card SERVICES
-              ============================= */
+      ============================= */
 
 .card-services .card-title {
   margin: 0;
@@ -622,7 +620,7 @@ ul.row {
 }
 
 /* Card TESTIMONIAL
-              ============================= */
+      ============================= */
 
 .card-testimonial {
   text-align: center;
