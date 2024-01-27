@@ -523,6 +523,11 @@ ul.row {
   margin-bottom: 5rem;
 }
 
+.section-hero .section-category {
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+
 .section-hero .section-inner {
   display: flex;
   flex-direction: column;
