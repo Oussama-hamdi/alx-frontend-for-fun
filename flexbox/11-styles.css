@@ -708,5 +708,5 @@ ul.row {
 .hero-article .section-body {
   position: relative;
   padding: 7rem 0 0;
-  z-index: 2rem;
+  z-index: 2;
 }
