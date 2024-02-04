@@ -909,6 +909,6 @@ textarea:focus {
 }
 
 .form-group:focus-within .form-help {
-  max-height: 30rem;
+  max-height: 20rem;
   margin: 0.4rem 0 0;
 }
