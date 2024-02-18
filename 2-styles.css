@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.toggle input {
+  appearance: none;
+}
+
+.toggle .toggle-label {
+  display: block;
+  position: relative;
+  width: 90px;
+  height: 34px;
+  background-color: #eee;
+  border-radius: 34px;
+  transition: 0.3s;
+  border: 1px solid #c3c3c3;
+}
+
+.toggle .toggle-label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #fff;
+  top: -2px;
+  left: -1px;
+  transition: 0.3s;
+  border: 1px solid #c3c3c3;
+}
+
+.toggle .toggle-label .toggle-inner {
+  position: relative;
+  width: 80%;
+  height: 100%;
+}
+
+.toggle input:not(:checked) + .toggle-label .toggle-inner::before {
+  content: "No";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  color: #c3c3c3;
+  line-height: 34px;
+  left: 64%;
+  font-family: sans-serif;
+}
+
+.toggle input:checked + .toggle-label .toggle-inner::after {
+  content: "Yes";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  color: white;
+  line-height: 34px;
+  left: 10px;
+  font-family: sans-serif;
+}
+
+.toggle input:checked + .toggle-label::after {
+  left: 54px;
+}
+
+.toggle input:checked + .toggle-label {
+  background-color: #e10c3c;
+}
