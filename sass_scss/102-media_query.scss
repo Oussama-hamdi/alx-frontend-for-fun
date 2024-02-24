@@ -5,6 +5,11 @@
     & {
       font-size: $size;
     }
+    @if ($media-size <= 320px) {
+      &.small {
+        color: #1D1D1D;
+      }
+    }
   }
 }
 
@@ -13,10 +18,4 @@ h1 {
   @include media(960px, 18px);
   @include media(640px, 16px);
   @include media(320px, 14px);
-  @media screen and (max-width: 320px) {
-    &.small {
-      color: #1D1D1D;
-    }
-  }
-
 }
